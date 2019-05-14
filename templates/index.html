@@ -1,0 +1,156 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+
+<div style="float: left; width: 100%"> 
+<div style="float: left; width: 20%" align="justify">
+
+<div style="float: left; width: 100%" class="col-md-4 col-md-offset-4">
+
+      <div align="center">
+        <h5>Connecting to database</h5>
+      </div>
+
+<hr>
+
+<form method="post" action="/index"  id="db_post" name="db_post">
+
+
+    {{ form1.hidden_tag() }}
+
+    {{ macros.render_field(form1.dbNotes, placeholder='Enter company', type='dbNotes', label_visible=true) }}
+    {{ macros.render_field(form1.dbTeams, placeholder='Enter team name', type='dbTeams', label_visible=false) }}
+    {{ macros.render_field(form1.dbMembers, placeholder='Enter member name', type='dbMembers', label_visible=false) }}
+
+    <div align="center"><button type="submit" class="btn btn-primary">Submit</button></p></div>
+
+</form>
+
+<hr>
+
+<form method="post" action="/upload"  enctype="multipart/form-data">
+
+    <div class="form-group">
+    <label for="inputFile">File input</label>
+    <input type="file" name="inputFile">
+    </div>
+
+    <div align="center"><button type="submit" class="btn btn-primary">Upload</button></p></div>
+
+</form>
+
+
+<hr>
+
+<form method="post" action="/index"  id="db_post" name="db_view">
+
+    {{ form2.hidden_tag() }}
+
+    {{ macros.render_field(form2.numRetrieve, placeholder='Retrieve last N DB entries (enter 1-9)', type='numRetrieve', label_visible=false) }}
+
+    <div align="center"><button type="submit" class="btn btn-primary">Retrieve</button></p></div>
+
+</form>
+
+</div>
+</div>
+
+
+<div style="float: left; width: 80%">
+
+<div id="wrapper">
+<div id=”content”>
+<h1 align="center"> FinTech </h1>
+
+<p align="center">
+
+
+<img src="https://s3-eu-west-1.amazonaws.com/lolium/pictures/main.jpg" alt=" начало " border="0" usemap="#Map3" width = "580" height = "auto">
+<map name="Map3" id="Map3">
+
+<area shape="circle" coords="78,106,30" href="1" target="_blank" alt="Кулаков Алексей" title="Кулаков Алексей">
+
+<area shape="circle" coords="68,194,30" href="2" target="_blank" alt="Хилько Сергей" title="Хилько Сергей">
+
+<area shape="circle" coords="137,200,30" href="3" target="_blank" alt="Мухамад Хамидула" title="Мухаммад Хамидула">
+
+<area shape="circle" coords="110,107,30" href="4" target="_blank" alt="Филипп Перич" title="Филипп Перич">
+
+<area shape="circle" coords="159,106,25" href="5" target="_blank" alt="Метсо Ангелина" title="Метсо Ангелина">
+
+<area shape="circle" coords="169,132,25" href="6" target="_blank" alt="Оля Ощепкова" title="Оля Ощепкова">
+
+<area shape="circle" coords="188,119,25" href="7" target="_blank" alt="Ира Карелина" title="Ира Карелина">
+
+<area shape="circle" coords="189,99,20" href="8" target="_blank" alt="Михаил Погорелов" title="Михаил Погорелов">
+
+<area shape="circle" coords="216,106,30" href="9" target="_blank" alt="Дима Кравчук" title="Дима Кравчук">
+
+<area shape="circle" coords="214,141,30" href="10" target="_blank" alt="Аня Малафеева" title="Аня Малафеева">
+
+<area shape="circle" coords="205,214,30" href="11" target="_blank" alt="Артем Байда" title="Артем Байда">
+
+<area shape="circle" coords="251,132,30" href="12" target="_blank" alt="Юля Ковалева" title="Юля Ковалева">
+
+<area shape="circle" coords="264,99,30" href="13" target="_blank" alt="Александр Карпов" title="Александр Карпов">
+
+<area shape="circle" coords="271,200,30" href="14" target="_blank" alt="Андрей Барсуков" title="Андрей Барсуков">
+
+<area shape="circle" coords="343,139,30" href="15" target="_blank" alt="Виктория Манджиева" title="Виктория Манджиева">
+
+<area shape="circle" coords="334,210,30" href="16" target="_blank" alt="Владимир Осипов" title="Владимир Осипов">
+
+<area shape="circle" coords="304,102,25" href="17" target="_blank" alt="Данила Майстренко" title="Данила Майстренко">
+
+<area shape="circle" coords="395,212,25" href="18" target="_blank" alt="Георгий Манасов" title="Георгий Манасов">
+
+<area shape="circle" coords="375,135,25" href="19" target="_blank" alt="Екатирина Пикинеева" title="Екатирина Пикинеева">
+
+<area shape="circle" coords="368,106,25" href="20" target="_blank" alt="Дима Сыпало" title="Дима Сыпало">
+
+<area shape="circle" coords="394,126,25" href="21" target="_blank" alt="Анна Замалетдинова" title="Анна Замалетдинова">
+
+<area shape="circle" coords="410,144,25" href="22" target="_blank" alt="Ксений Серикова" title="Ксений Серикова">
+
+<area shape="circle" coords="432,146,25" href="23" target="_blank" alt="Екатерина Вертоградова" title="Екатерина Вертоградова">
+
+<area shape="circle" coords="454,122,25" href="24" target="_blank" alt="Александра Овчинникова" title="Александра Овчинникова">
+
+<area shape="circle" coords="481,130,25" href="25" target="_blank" alt="Ксения Ивлева" title="Ксения Ивлева">
+
+<area shape="circle" coords="421,112,25" href="26" target="_blank" alt="Миша Крючков" title="Миша Крючков">
+
+<area shape="circle" coords="310,131,25" href="27" target="_blank" alt="Ханду Ридчинова" title="Ханду Ридчинова">
+
+<area shape="circle" coords="275,136,25" href="28" target="_blank" alt="Катарина Пуцко" title="Катарина Пуцко">
+
+
+</map>
+</p>
+
+<p align="justify">
+В конце августа 2016 года приказом Верховного Главнокомандующего Сбербанка был образован FinTech, пребывания штаба в городе Москве.
+</p>
+
+
+<marg>
+<p align="justify">
+<em><small>Использованные источники: Вконтакте
+<p>
+Использованы фотографии из личного фонда и фонда группы FinTech.
+</p>
+
+</small></em>
+
+</p>
+</marg>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+{% endblock %}
